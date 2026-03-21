@@ -1,6 +1,6 @@
 {
   "name": "@letsprogram/ng-pdf-viewer",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Angular standalone PDF viewer component powered by @embedpdf/snippet",
   "license": "MIT",
   "author": "Sashi Kumar Yadav",
