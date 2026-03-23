@@ -127,7 +127,10 @@ export class NgPdfViewer {
     }
     if (this.syncTheme()) {
       const userStoredThemeKey = this.themeStorageKey();
-      const storedThemeName = userStoredThemeKey ? localStorage.getItem(userStoredThemeKey) : null; //'light'
+      const storedThemeName =
+        userStoredThemeKey && isPlatformBrowser(this.platformId)
+          ? localStorage.getItem(userStoredThemeKey)
+          : null; //'light'
 
       if (storedThemeName) {
         const isDark = storedThemeName.toLocaleLowerCase().includes('dark');
