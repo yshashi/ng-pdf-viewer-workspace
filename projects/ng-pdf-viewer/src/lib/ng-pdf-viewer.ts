@@ -79,7 +79,7 @@ export class NgPdfViewer {
       return;
     }
 
-    let EmbedPDF: any;
+    let EmbedPDF: Awaited<typeof import('@embedpdf/snippet')>['default'];
     try {
       ({ default: EmbedPDF } = await import('@embedpdf/snippet'));
     } catch (importError) {
