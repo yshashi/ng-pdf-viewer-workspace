@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@angular/build": "^21.2.3",
-    "@angular/cli": "^21.2.0",
+    "@angular/cli": "^21.2.8",
     "@angular/compiler-cli": "^21.2.0",
     "@embedpdf/snippet": "^2.9.1",
     "jsdom": "^28.0.0",
